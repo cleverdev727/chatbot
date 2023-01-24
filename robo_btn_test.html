@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>RoboNegotiator Button Loading Demo</title>
+</head>
+<body>
+
+      <h3 style="text-align: center;">RoboNegotiator Bot Integration Demo</h3>
+
+      <!-- .load-robo-btn-here inside this class element Chatbot button will be load -->
+      <div class="load-robo-btn-here"></div>
+
+
+
+
+      <!-- Script for Init. Config of Bot -->
+      <script type="text/javascript"> 
+            // required fields ...
+            var ROBO_UPC_CODE ="2T2ZFMCA2GC001437";//Product UPC Code
+            var ROBO_API_KEY = "70c8aa1d3aff53c74f24301d6b39bd0c60eedea9"; //Your api key
+            var ROBO_SELLER_EMAIL = 'dealer0505@yopmail.com';//Your registered account email as a seller
+          
+            var ADD_TO_CART_BTN_IDENTIFIER_TYPE  = 'class'; // class or id; The DOM element identifier attribute where inside Robo button will be placed
+            var ADD_TO_CART_BTN_IDENTIFIER_NAME  = 'load-robo-btn-here'; // class or id name; 
+            
+            // optional fields ...
+            var ROBO_BTN_CLASS = ''; //any class name that you want to set to button for ex: ROBO_BTN_CLASS = "my-class-name-whatever-you-want"
+            var ROBO_BTN_STYLE = ''; //any custom style you want to set to button for ex: ROBO_BTN_STYLE = "width:30px;border:none";
+            var ROBO_BTN_CUSTOM_TEXT = 'MY BUTTON NAME';//The button inner text. Default is "CHECK FOR A DEAL" but you can customize it.
+            var ROBO_STORE_NAME = 'Welcome to XYX Shop';// The chatbot header title, you can customize it. Default is "Your Dealership Name Here", recommended to set your own site name, shop or dealership name Like Welcome to XYX Shop
+            var ROBO_LOGO_URL = ""; //The logo URL (HTTP Full URL) will display on header of chatbot-- recommended to use your shop/website logo URL. Recommended Size: 130px*130px
+      </script>
+      <!-- Main Script to load the Bot -->
+      <script type="text/javascript" src="https://AutoDealCloser.com/chatbot/roboconfig-nlp.js"> </script>
+</body>
+</html>
